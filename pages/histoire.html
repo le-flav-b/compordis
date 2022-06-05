@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>histoire - COMPORDIS</title>
+	<link rel="icon" href="../media/logo_page.ico"> <!--icone ordinateur dans l'onglet-->
+	<link rel="stylesheet" href="../assets/base.css">
+	<link rel="stylesheet" href="../assets/histoire.css">
+	<!--lien css prédéfini pour les icones (navbar et footer)-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/assets/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+</head>
+
+
+<body> <!-- 2 balises car l'écran est scindé en 2 : <aside> pour la petite partie droite et <div id="main"> pour la grande partie gauche-->
+	<aside> <!--partie gauche de l'écran (20%) : image, navbar et bouton-->
+		<img src="../media/logo_ordinateur.png" alt="logo" id="logo_ordinateur">
+		<nav>
+			<ul>
+				<li>
+					<a href="../index.html">
+						<i class="fas fa-home"></i>
+						ACCUEIL
+					</a>
+				</li>
+				<li>
+					<a href="histoire.html" id="actuel">
+						<i class="fas fa-book"></i>
+						Histoire de l'ordinateur
+					</a>
+				</li>
+				<li>
+					<a href="#" id="non_titre">
+						<i class="fas fa-tools"></i>
+						Composants :
+					</a>
+				</li>
+				<li class="dans_composants">
+					<a href="composants/alimentation.html">alimentation</a>
+				</li>
+				<li class="dans_composants">
+					<a href="composants/carte_mère.html">carte mère</a>
+				</li>
+				<li class="dans_composants">
+					<a href="composants/microprocesseur.html">microprocesseur</a>
+				</li>
+				<li class="dans_composants">
+					<a href="composants/disque_dur.html">disque dur</a>
+				</li>
+				<li class="dans_composants">
+					<a href="composants/mémoire_vive.html">mémoire vive</a>
+				</li>
+				<li class="dans_composants">
+					<a href="composants/carte_graphique.html">carte graphique</a>
+				</li>
+				<li class="dans_composants">
+					<a href="composants/bus.html">bus</a>
+				</li>
+				<li class="dans_composants">
+					<a href="composants/lecteur_de_disque.html">lecteur de disque</a>
+				</li>
+				<li class="dans_composants">
+					<a href="composants/connecteurs.html">connecteurs périphériques</a>
+				</li>
+			</ul>
+		</nav>
+		<button id="navbar_button" onclick=affiche_message()>structure du site</button>
+	</aside>
+	<div id="main"> <!--partie droite de l'écran (80%) : main (contenu propre à la page) et pied de page-->
+
+		<main> <!--corps de la page-->
+			<div id="titres"> <!--titres de la page-->
+				<h1>l'histoire de l'ordinateur</h1>
+				<h2><i>du XVII<sup>e</sup> siècle à maintenant...</i></h2>
+			</div>
+
+			<!--mini-introduction-->
+			<p><b>L'ordinateur a été inventé car l'homme a toujours cherché à améliorer sa façon de calculer, afin de limiter ses erreurs et pour économiser son temps.</b></p>
+
+			<!--paragraphe sur ce que l'on avait avant les ordinateurs-->
+			<p>Les premières <b>machines à calculer</b> sont arrivées au XVII<sup>e</sup> siècle :<br>
+			En 1623, William Schickard inventa la première machine à calculer mécanique.<br>
+			En 1642, Blaise Pascal créa une machine capable d'effectuer des additions et soustractions.<br>
+			En 1673, Gottfried Wilhelm Von Leibniz ajouta à cette dernière la multiplication et la division.</p>
+
+			<!--paragraphe sur l'invention du binaire-->
+			<p>Le système <b>binaire</b> a été concrétisé (l'idée est apparu au XIX<sup>ème</sup> siècle) par John Atanasoff en 1937. Le principe est de ne plus écrire les nombres en base 10 comme on en a l'habitude, avec les chiffres de 0 à 9, mais en base 2, avec les valeurs 0 ou 1 (ou moins conventionnellement True ou False, ON ou OFF, ...). C'est le language de base qu'utiliseront les ordinateurs.</p>
+
+			<!--pour comprendre le système binaire-->
+			<p id="pour_comprendre">POUR COMPRENDRE : Tout comme pour le système décimal que l'on utilise courament, dans les entiers naturels, le caractère le plus fort est celui de gauche (le 3 des dizaines vaudra toujours plus que le 7 des unités). En fait, quand un espace (celui des centaines par exemple) n'est pas nul mais à son minimum (donc 1), il vaut un de plus que le maximum que l'on peut écrire dans les espaces à sa droite (pour l'exemple les espaces à droites sont les dizaines et les unités et le plus grand caractère est le neuf, ça fait 99 et effectivement 99+1=100). C'est le même principe pour le binaire, le 1 dans le premier espace à droite en binaire vaut 1 en déciamal, le 1 dans le deuxième faut 1+1=2 en décimal, ... on a donc le 1 dans le n<sup>ème</sup> espace en partant de la droite vaut 2<sup>n+1</sup> en décimal.<br>ex: 23en décimal s'écrit 10111 en binaire ; 100111110 en binaire correspond à 318.</p>
+
+			<!--annecdote sur l'invention de binaire-->
+			<p class="annecdote">ANNECDOTE : La soirée ou John Atanasoff a inventé le binaire, il était auparavant lasse de la situation politique Américaine. Il quitta soudainement sont bureau et décida de rouler et de s'arrêter aux bars qu'ils croiserait. C'est au bout de 3 Scotch qu'il sourit, et qu'une pensée lui traversa l'esprit : &laquo; 1 et 0, le bianaire, c'est la solution ! &raquo;. Cette nouvelle approche révolutionnaire aidera à automatiser les calculs.</p>
+
+			<!--paragraphe sur l'ANIAC, premier ordinateur-->
+			<p>En 1943, le premier ordinateur ne comportant plus de pièces mécaniques est créé grâce à J.Mauchly et J.Presper Eckert : <b>l'ENIAC</b> (Electronic Numerical Integrator And Computer). Il est composé de 18000 lampes à vide, et occupe une place de 1500 m<sup>2</sup>. Il fut utilisé par l'armée Américaine pour des calculs ayant servi à mettre au point la bombe H. Son principal inconvénient était sa programmation : l'ENIAC était en effet uniquement programmable manuellement avec des commutateurs ou des câbles à enficher.</p>
+
+			<!--annecdote sur le bug-->
+			<p class="annecdote">ANNECDOTE : La première erreur informatique est due à un insecte attiré par la chaleur qui est venu se loger dans les lampes et a entrainé un court-circuit. Ainsi le terme anglais pour « insecte » étant « bug », le nom est resté pour désigner une erreur informatique.</p>
+
+			<!--paragraphe sur l'arrivée de l'ordinateur dans le proffesionnel-->
+			<p>L'utilisation de l'informatique a explosé à l'arrivée, en 1963, des ordinateurs à circuit intégré. L'un de leurs premiers usages a été dans les systèmes embarqués, notamment par la NASA dans l'ordinateur de guidage d'Apollo et par les militaires dans les missiles balistiques. Le circuit intégré autorise alors le développement d'ordinateurs plus compacts que l'on appele <b>les mini-ordinateurs</b>.</p>
+
+			<!--paragraphe sur l'arrivée de l'ordinateur dans les foyers-->
+			<p>C'est en 1973 que l'on voit les ordinateurs arriver dans les foyers, grâce au premier <b>micro-ordinateur</b>, le Micral.</p>
+
+			<!--paragraphe sur le premier ordinateur portable-->
+			<p>En 1981 a été inventé l’Osborne 1, le premier <b>ordinateur portable</b> de l’histoire. Il pesait 10,7 kg pour un écran de 5 pouces monochrome capable d’afficher 52 caractères par ligne sur 24 lignes.</p>
+
+			<!--paragraphe sur les ordinateurs aujourd'hui-->
+			<p>Depuis, les ordinateur fixes comme portables sont en perpétuelle évolution. Les plus grandes marques (Apple, Dell, HP, Lenovo, Microsoft, Asus, Acer, ...) sortent de nouveaux produits chaques années, toujours plus compétants.</p>
+
+			<!--liens vers la page histoire des ordinateurs de Wikipédia-->
+			<p id="plus_d_infos"><i>Pour plus d'informations sur l'histoire des ordinateurs cliquez <a href="https://fr.wikipedia.org/wiki/Histoire_des_ordinateurs" target="_blank">ici</a>.</i></p>
+
+			<br>
+
+			<table>
+				<tr>
+					<td id="binaire">
+						<h3>BINAIRE :</h3>
+						<h4>-<i>- quizz de convertions -</i>-</h4>
+						<h6>Quel est l'équivalent de 21<sub>10</sub> en binaire ? <input type="number" id="conver1"><br></h6>
+						<h6>Quel est l'équivalent de 213<sub>10</sub> en binaire ? <input type="number" id="conver2"><br></h6>
+						<h6>À quel décimal correspond 10011<sub>2</sub> ? <input type="number" id="conver3"><br></h6>
+						<h6>À quel décimal correspond 11111111<sub>2</sub> ? <input type="number" id="conver4"><br></h6>
+						<button onclick=soumettre() id="bouton_valider">valider</button>
+						<button onclick=effacer()>effacer : </button>
+						<select id="selection">
+							<option>tout</option>
+							<option>la 1</option>
+							<option>la 2</option>
+							<option>la 3</option>
+							<option>la 4</option>
+						</select>
+						<br><br><hr>
+						<h4 id="convertisseur_titre">-<i>- convertisseur -</i>-</h4>
+						<table>
+							<tr>
+								<td><h5>décimal</h5></td>
+								<td></td>
+								<td><h5>binaire</h5></td>
+							</tr>
+							<tr>
+								<td><input type="number" value="0" id="conver_deci"></td>
+								<td><button onclick=decimal_vers_binaire()>==<i class="fas fa-chevron-right"></i></button><br>
+								<button onclick=binaire_vers_decimal()><i class="fas fa-chevron-left"></i>==</button></td>
+								<td><input type="text" value="0" id="conver_bi"></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<!--image de L'ENIAC ou d'un nouvel ordinateur (change avec des bouttons)-->
+						<p id="légende">l'ENIAC :</p>
+						<button onclick=rendre_obsolète()>version obsolète</button>
+						<img src="../media/l'ENIAC.jpg" width="350px" height="350px" id="image_ordinateur">
+						<button onclick=moderniser()>version moderne</button>
+					</td>
+				</tr>
+			</table>
+		</main>
+
+		<footer> <!--pied de page sur la partie gauche : <div id="foot"> pour les informations sur la page et <div id="info"> pour plus d'infos sur moi-->
+			<div id="foot">
+				mini-projet page web HTML/CSS/JS par Flavien BOULEAU (608)
+			</div>
+			<div id="info">
+				<i class="fas fa-chevron-up"></i>
+				&nbsp;&#160;à propos du créateur :&nbsp;&#160;
+				<i class="fas fa-chevron-up"></i>
+				<span> <!--partie invisible sans le survol car sous l'écran-->
+					<br><br>
+					<table id="table_d_infos">
+						<tr>
+							<td class="infos_table"><b>prénom :</b></td>
+							<td class="moi">Flavien</td>
+							<td rowspan="5"><img src="../media/ma_photo.jpg" height="110px"></td>
+						</tr>
+						<tr>
+							<td class="infos_table"><b>nom :</b></td>
+							<td class="moi">BOULEAU</td>
+						</tr>
+						<tr>
+							<td class="infos_table"><b>classe :</b></td>
+							<td class="moi">608</td>
+						</tr>
+						<tr>
+							<td class="infos_table"><b>âge :</b></td>
+							<td class="moi">16 ans</td>
+						</tr>
+						<tr>
+							<td class="infos_table"><b>spécialités :</b></td>
+							<td class="moi">NSI, maths, physique</td>
+						</tr>
+					</table>
+				</span>
+			</div>
+		</footer>
+	</div>
+	<script src="../assets/base.js"></script>
+	<script src="../assets/histoire.js"></script>
+</body>
+
+
+</html>

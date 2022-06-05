@@ -1,0 +1,76 @@
+/*importation des polices googlefonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+
+/*style des titres*/
+#titres {
+	border-bottom: solid 2px;
+} h1 {
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 6em;
+	margin: 25px auto 5px auto;
+} h2 {
+	font-family: 'Cabin Sketch', cursive;
+	margin-top: 0;
+	font-size: 2em;
+} h3 {
+	font-size: 3em;
+	color: #C03500;
+	margin: 5% 0;
+} h4 {
+	font-size: 1.5em;
+} h5 {
+	text-align: center;
+} h6 {
+	text-align: right;
+	font-family: sans-serif;
+	font-size: 0.75em;
+}
+
+/*style des paragraphes*/
+p {
+	text-align: justify;
+	font-size: 1.2em;
+	font-family: 'PT Serif';
+	text-indent: 60px;
+	color: #000060;
+}
+
+/*style du lien Wikipédia*/
+#plus_d_infos {
+	text-align: right;
+}
+
+/*style des paragraphes spéciaux*/
+.annecdote, #pour_comprendre {
+	text-indent: 0;
+	font-style: italic;
+} .annecdote {
+	color: #D143D4;	
+} #pour_comprendre {
+	color: #80BB2C;
+}
+
+#légende {
+	text-align: center;
+}
+
+#binaire {
+	border:solid 2px #C03500;
+	padding: 2%;
+}
+
+table {
+	width: 95%;
+}
+
+/*style de la table des projets javascript*/
+#conver1, #conver2, #conver3, #conver4 {
+	color: blue;
+} #conver_deci, #conver_bi {
+	color: darkblue;
+	text-align: center;
+} #bouton_valider {
+	margin-right: 10%;
+} #convertisseur_titre {
+	margin-bottom: 0;
+}

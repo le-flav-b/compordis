@@ -1,0 +1,54 @@
+/*importation d'une police googlefonts*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/*style du grand titre (nom du composant)*/
+h1 {
+	border-style: double;
+	border-color: #E78601;
+	border-width: 5px;
+	color: #E78601;
+	background-color: #C0C0C0;
+	font-size: 75px;
+	font-family: fantasy;
+	text-align: center;
+	margin-top: 20px;
+}
+
+/*style des titres de parties*/
+h2 {
+	border-top-style: dotted;
+	border-color: #B5750D;
+	border-width: 7px;
+	padding-top: 10px;
+	font-size: 1.8em;
+	text-align: left;
+}
+
+/*style des paragraphes*/
+p {
+	padding-bottom: 20px;
+	color: #3227dd;
+	font-family: cursive;
+	text-align: left;
+	font-size: 1.1em;
+}
+
+/*styles des boutons de navigations*/
+.boutons_navigation {
+	margin-top: 20px;
+	width: 100%;
+	align-self: center;
+} .bouton {
+	background-color: #23B100;
+	color: #FFF;
+	font-size: 15px;
+	padding: 10px 30px;
+	margin-left: 70px;
+	margin-right: 70px;
+	text-decoration: none;
+	font-family: 'Oswald';
+} .bouton_gauche {
+	text-align: left;
+} .bouton_droit {
+	text-align: right;
+}

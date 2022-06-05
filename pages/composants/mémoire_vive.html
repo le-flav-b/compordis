@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>RAM - COMPORDIS</title>
+	<link rel="icon" href="../../media/logo_page.ico"> <!--icone ordinateur dans l'onglet-->
+	<link rel="stylesheet" href="../../assets/base.css">
+	<link rel="stylesheet" href="../../assets/composants.css">
+	<!--lien css prédéfini pour les icones (navbar et footer)-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/assets/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+</head>
+
+
+<body> <!-- 2 balises car l'écran est scindé en 2 : <aside> pour la petite partie droite et <div id="main"> pour la grande partie gauche-->
+	<aside> <!--partie gauche de l'écran (20%) : image, navbar et bouton-->
+		<img src="../../media/logo_ordinateur.png" alt="logo" id="logo_ordinateur">
+		<nav>
+			<ul>
+				<li>
+					<a href="../../index.html">
+						<i class="fas fa-home"></i>
+						ACCUEIL
+					</a>
+				</li>
+				<li>
+					<a href="../histoire.html">
+						<i class="fas fa-book"></i>
+						Histoire de l'ordinateur
+					</a>
+				</li>
+				<li>
+					<a href="#" id="non_titre">
+						<i class="fas fa-tools"></i>
+						Composants :
+					</a>
+				</li>
+				<li class="dans_composants">
+					<a href="alimentation.html">alimentation</a>
+				</li>
+				<li class="dans_composants">
+					<a href="carte_mère.html">carte mère</a>
+				</li>
+				<li class="dans_composants">
+					<a href="microprocesseur.html">microprocesseur</a>
+				</li>
+				<li class="dans_composants">
+					<a href="disque_dur.html">disque dur</a>
+				</li>
+				<li class="dans_composants">
+					<a href="mémoire_vive.html" id="actuel">mémoire vive</a>
+				</li>
+				<li class="dans_composants">
+					<a href="carte_graphique.html">carte graphique</a>
+				</li>
+				<li class="dans_composants">
+					<a href="bus.html">bus</a>
+				</li>
+				<li class="dans_composants">
+					<a href="lecteur_de_disque.html">lecteur de disque</a>
+				</li>
+				<li class="dans_composants">
+					<a href="connecteurs.html">connecteurs périphériques</a>
+				</li>
+			</ul>
+		</nav>
+		<button id="navbar_button" onclick=affiche_message()>structure du site</button>
+	</aside>
+	<div id="main"> <!--partie droite de l'écran (80%) : main (contenu propre à la page) et pied de page-->
+
+		<main> <!--corps de la page-->
+			<h1>LA MÉMOIRE VIVE :</h1> <!--titre (nom du composant)-->
+			
+			<!--images du composant-->
+			<img src="../../media/RAM2.jpg" height="225px" class="image_composants">
+			<img src="../../media/RAM.png" height="225px" class="image_composants">
+			<img src="../../media/RAM3.jpg" height="225px" class="image_composants">
+
+			<!--informations-->
+			<h2>I) Qu'est ce que c'est ?</h2>
+			<p>La mémoire vive (aussi appellé RAM pour Random Access Memory) est un espace de stockage réservé à l'ordinateur où sont placés temporairement les données en cours de fonctionnnement pour le rendre plus réactif.</p>
+
+			<!--fonctionnement-->
+			<h2>II) Comment ça marche ?</h2>
+			<p>La mémoire vive est utilisée car elle permet de ne pas saturer le disque dur, mais surtout car on accède beaucoup plus facilement et rapidement à la RAM qu'au disque dur. En effet, la mémoire vive est beaucoup plus rapide grâce à un accès direct à l'information recherché, en opposition à un accès séquentiel où l'on accède à une information pas à pas, selon un ordre prédéfini.</p>
+
+			<!--différences-->
+			<h2>III) Quelle différence fait la qualité ?</h2>
+			<p>Une mémoire RAM plus importante rendra l'ordinateur plus rapide, le milieu de gamme est aux alentours des 50€ et le haut de gamme s'approche des 100€.</p>
+
+			<!--fabricants-->
+			<h2>IV) Qui les fabrique ?</h2>
+			<p>Les principaux fabricants sont A-DATA, Corsair, Crucial, Dane-Elec et G. Skill.</p>
+
+			<!--boutons avec un lien vers le précédent/suivant composant-->
+			<table class="boutons_navigation">
+				<tr>
+					<td class="bouton_gauche">
+						<a href="disque_dur.html" class="bouton">❮ DISQUE DUR</a>
+					</td>
+					<td class="bouton_droit">
+						<a href="carte_graphique.html" class="bouton">CARTE GRAPHIQUE ❯</a>
+					</td>
+				</tr>
+			</table>
+		</main>
+
+		<footer> <!--pied de page sur la partie gauche : <div id="foot"> pour les informations sur la page et <div id="info"> pour plus d'infos sur moi-->
+			<div id="foot">
+				mini-projet page web HTML/CSS/JS par Flavien BOULEAU (608)
+			</div>
+			<div id="info">
+				<i class="fas fa-chevron-up"></i>
+				&nbsp;&#160;à propos du créateur :&nbsp;&#160;
+				<i class="fas fa-chevron-up"></i>
+				<span> <!--partie invisible sans le survol car sous l'écran-->
+					<br><br>
+					<table id="table_d_infos">
+						<tr>
+							<td class="infos_table"><b>prénom :</b></td>
+							<td class="moi">Flavien</td>
+							<td rowspan="5"><img src="../../media/ma_photo.jpg" height="110px"></td>
+						</tr>
+						<tr>
+							<td class="infos_table"><b>nom :</b></td>
+							<td class="moi">BOULEAU</td>
+						</tr>
+						<tr>
+							<td class="infos_table"><b>classe :</b></td>
+							<td class="moi">608</td>
+						</tr>
+						<tr>
+							<td class="infos_table"><b>âge :</b></td>
+							<td class="moi">16 ans</td>
+						</tr>
+						<tr>
+							<td class="infos_table"><b>spécialités :</b></td>
+							<td class="moi">NSI, maths, physique</td>
+						</tr>
+					</table>
+				</span>
+			</div>
+		</footer>
+	</div>
+	<script src="../../assets/base.js"></script>
+</body>
+
+
+</html>

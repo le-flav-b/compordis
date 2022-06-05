@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>envoyer un avis - COMPORDIS</title>
+	<link rel="icon" href="media/logo_page.ico"> <!--icone ordinateur dans l'onglet-->
+	<link rel="stylesheet" href="../assets/avis.css">
+</head>
+<body>
+	<main>
+		<h1>
+			ENVOYER UN AVIS :
+		</h1>
+		<form action="mailto:flavien.bouleau@free.fr?subject=avis sur votre site" name="envoi" method=POST enctype="text/plain">
+			<table>
+				<tr>
+					<td>
+						<b>Nom : </b><input name="nom  " height="100%" maxlength=25 class="champs_noms"><br>
+						<b>Prenom : </b><input name="PRENOM  " height="600px" maxlength=25 class="champs_noms"><br>
+						<textarea name="message " rows="5"></textarea>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table>
+				<caption>
+					<h3>Comment trouvez-vous mon site ?</h3>
+				</caption>
+				<tr id="coche">
+					<td rowspan="2">
+						<input type="radio" name="avis " value=" Génial !! 20/20 direct !">
+						Génial !! 20/20 direct !<br>
+						<input type="radio" name="avis " value=" Très bien, bravo !">
+						Très bien, bravo !<br>
+						<input type="radio" name="avis " value=" Assez bien, peut mieux faire..">
+						Assez bien, peut mieux faire..<br>
+						<input type="radio" name="avis " value=" Franchement pas ouf...">
+						Franchement pas ouf...<br>
+						<input type="radio" name="avis " value=" Mon hamster aurait fait mieux !">
+						Mon hamster aurait fait mieux !<br>
+					</td>
+					<td>
+						<input type="submit"><br><br>
+						<input type="reset">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</main>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/*arrière plan de la page*/
+body {
+	background-color: #EAE5E5;
+}
+
+/*style de l'interieur de la page*/
+main {
+	background-color: #F2F2F2;
+	width: 50%;
+	margin: auto;
+	margin-top: 4%;
+	padding: 2% 2% 4% 2%;
+}
+
+/*style du titre*/
+h1 {
+	text-align: center;
+	font-size: 3em;
+	color: red;
+	text-decoration: underline;
+	margin-top: 5%;
+}
+
+/*style du formulaire*/
+form {
+	border:double purple 5px;
+	width:80%;
+	margin:auto;
+	margin-top: 5%;
+	text-align:center;
+}
+
+/*style du tableau pour la mise en forme*/
+table {
+	width: 99.2%;
+	border-spacing: 20px;
+	margin: auto;
+}
+
+/*style des champs*/
+.champs_noms {
+	color: darkblue;
+	margin-top: 1%;
+} #coche {
+	text-align: left;
+} textarea {
+	width: 98%;
+	margin-left: 1%;
+	color: blue;
+	margin-top: 1%;
+}

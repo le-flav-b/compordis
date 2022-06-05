@@ -1,0 +1,67 @@
+/*definition des marges*/
+main {
+	margin-bottom: 0px;
+}
+
+/*style du grand titre*/
+h1 {
+	margin-top: 20px;
+	margin-bottom: 18px;
+	text-align: center;
+	font-size: 3.2em;
+	color: #C82B12;
+	text-shadow: 2px 2px #000;
+	background-color: rgba(50, 50, 210, 0.65);
+	border: 2px solid #C82B12;
+	border-radius: 50px;
+}
+
+/*style de l'introduction*/
+#intro {
+	color: #000060;
+	font-size: 18px;
+	font-family: monospace;
+	text-align: justify;
+}
+
+/*styles du tableau des composants*/
+#table_principale {
+	margin: 5px;
+	border-spacing: 40px;
+} #table_principale td {
+	width: 26%;
+	background-color: #EAEAEA;
+	padding: 5px;
+	border: 5px dashed #E78601;
+	border-radius: 25px;
+	text-align: center;
+} #table_principale a {
+	text-decoration:none;
+} #table_principale td h2 {
+	text-align: center;
+	color: #C904F2;
+	text-decoration: underline;
+	font-size: 22px;
+} #table_principale p {
+	color: #3227DD;
+	font-size: 19px;
+	text-align: justify;
+	padding: 0 6px 0 6px;
+}
+
+/*style des fausses mentions légales et des moyens de communication*/
+#mollet_de_page {
+	background-color: #BBB;
+	margin-bottom: 0;
+} #avis {
+	font-size: 1.2em;
+	color: #444;
+	text-decoration: underline;
+} .reseaux {
+	font-size: 40px;
+	color: #000;
+} .reseaux:hover {
+	color: #444;
+} #mollet_de_page td:not(#case_reseaux) {
+	border-right: solid 1px #000;
+}

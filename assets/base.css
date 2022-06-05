@@ -1,0 +1,117 @@
+﻿/*arrière plan et marges générales*/
+body {
+  margin-bottom: 40px;
+  background-image: linear-gradient(150deg, rgba(200, 200, 200, 1), rgba(200, 200, 200, 0.15));
+}
+
+/*fixation de la partie gauche*/
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  border-right: 2px solid;
+  line-height: 220%;
+  overflow: auto;
+}
+
+/*style de la liste de la navbar*/
+ul {
+  padding-top: 18px;
+  margin-left: -1.2rem;
+  list-style: none;
+}
+
+/*style du texte de la navbar*/
+li a {
+  text-decoration: none;
+  color: #000;
+  font-family: cursive;
+  font-size: 18px;
+}
+
+/*couleur de la page actuelle dans la navbar*/
+#actuel {color: #531EA7}
+
+/*style des éléments de la liste de la navbar au survol (sauf pour "les composants" qui n'est pas un lien)*/
+li a:not(#non_titre):hover {
+  color: #CC58C9;
+  text-decoration: underline;
+  font-size: 19px
+}
+
+/*style de la liste des composants dans la navbar*/
+.dans_composants {
+  margin-left: 2rem;
+  list-style-type: square;
+}
+
+/*fixation de la partie droite*/
+#main {
+  margin-left: 20.5%;
+  margin-right: 0.5%;
+  height: 100%;
+  min-height: 100%;
+}
+
+/*fixation de la partie principale (dans la partie droite)*/
+main {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/*styles des éléments du pied de page*/
+footer #foot , footer #info {
+  text-align: center;
+  font-size: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 24px;
+  background-color: #31241B;
+  border-radius: 12px 12px 0 0;
+  color: #FFF;
+} footer #foot {
+  left: 20.5%;
+  width: 55%;
+} footer #info {
+  right: 0.5%;
+  width: 23.5%;
+}
+
+/*déploiment de mes informations pour voir le contenu au survol*/
+#info:hover {height: auto;}
+
+/*styles des éléments du tableau de mes information dans le pied de page*/
+#table_d_infos {
+  margin: auto;
+  margin-bottom: 10px;
+} .infos_table {
+  text-align: right;
+  color: #88DEF8;
+} .moi {
+  color: #38A1F6;
+}
+
+/*styles du bouton de la navbar*/
+#navbar_button {
+  width: 165px;
+  height: 38px;
+  font-size: 20px;
+  background-color: #3E3E3E;
+  color: #CCC;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+} #navbar_button:hover {
+  background-color: #2D2D2D;
+  color: #DDD;
+}
+
+/*style de l'image d'ordinateur en haut à droite de la page*/
+#logo_ordinateur {
+  width: 90%;
+  padding-top: 20px;
+}

@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>COMPORDIS - les composants d'un ordinateur</title>
+	<link rel="icon" href="media/logo_page.ico"> <!--icone ordinateur dans l'onglet-->
+	<link rel="stylesheet" href="assets/base.css">
+	<link rel="stylesheet" href="assets/accueil.css">
+	<!--lien css prédéfini pour les icones (navbar et footer)-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/assets/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+</head>
+
+
+<body> <!-- 2 balises car l'écran est scindé en 2 : <aside> pour la petite partie droite et <div id="main"> pour la grande partie gauche-->
+	<aside> <!--partie gauche de l'écran (20%) : image, navbar et bouton-->
+		<img src="media/logo_ordinateur.png" alt="logo" id="logo_ordinateur">
+		<nav>
+			<ul>
+				<li>
+					<a href="index.html" id="actuel">
+						<i class="fas fa-home"></i>
+						ACCUEIL
+					</a>
+				</li>
+				<li>
+					<a href="pages/histoire.html">
+						<i class="fas fa-book"></i>
+						Histoire de l'ordinateur
+					</a>
+				</li>
+				<li>
+					<a href="#" id="non_titre">
+						<i class="fas fa-tools"></i>
+						Composants :
+					</a>
+				</li>
+				<li class="dans_composants">
+					<a href="pages/composants/alimentation.html">alimentation</a>
+				</li>
+				<li class="dans_composants">
+					<a href="pages/composants/carte_mère.html">carte mère</a>
+				</li>
+				<li class="dans_composants">
+					<a href="pages/composants/microprocesseur.html">microprocesseur</a>
+				</li>
+				<li class="dans_composants">
+					<a href="pages/composants/disque_dur.html">disque dur</a>
+				</li>
+				<li class="dans_composants">
+					<a href="pages/composants/mémoire_vive.html">mémoire vive</a>
+				</li>
+				<li class="dans_composants">
+					<a href="pages/composants/carte_graphique.html">carte graphique</a>
+				</li>
+				<li class="dans_composants">
+					<a href="pages/composants/bus.html">bus</a>
+				</li>
+				<li class="dans_composants">
+					<a href="pages/composants/lecteur_de_disque.html">lecteur de disque</a>
+				</li>
+				<li class="dans_composants">
+					<a href="pages/composants/connecteurs.html">connecteurs périphériques</a>
+				</li>
+			</ul>
+		</nav>
+		<button id="navbar_button" onclick=affiche_message()>structure du site</button>
+	</aside>
+	<div id="main"> <!--partie droite de l'écran (80%) : main (contenu propre à la page) et pied de page-->
+
+		<main> <!--corps de la page-->
+			<h1> <!--grands titres de l'accueil-->
+				.:: COMPORDIS ::.<br> <!--nom du site-->
+				LES COMPOSANTS D'UN ORDINATEUR
+			</h1>
+			<p id="intro"> <!--introduction-->
+				Le premier ordinateur sans pièces mécaniques a été inventé dans les années 1940, c'était un appareil de l'armée américaine de plus de 30 tonnes utilisé pour calculer les trajectoires des tirs d'artillerie. En 80 ans, l'ordinateur s'est dévellopé de manière exponentielle, si bien qu'aujourd'hui presque tout le monde a ou utilise un ordinateur. Il y a d'ailleurs des milliers d'ordinateurs différents, adaptés à tous les besoins et budgets. Aujourd'hui, que ce soit l'ordinateur le plus puissant du monde, utilisé par la NASA, ou l'ordinateur que vous avez chez vous pour de la bureautique, ils sont tous composés grossièrement des mêmes constituants majeurs. <b>Savez-vous de quoi est fait votre ordinateur ?</b> Je vous propose de voir ça de plus près avec compordis !
+			</p>
+			<table id="table_principale"> <!--tableau avec une ligne d'une case pour l'histoire de l'ordinateur et 3 lignes de 3 cases pour les 9 composants que je présente (chaque cases est un lien)-->
+				<tr>
+					<td colspan="3">
+						<a href="pages/histoire.html">
+							<h2>l'histoire de l'ordinateur</h2>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="pages/composants/alimentation.html">
+							<h2>l'alimentation</h2>
+							<img src="media/alimentation.png" width="40%">
+							<p>
+								L'<b>alimentation</b> est le composant relié aux autres permettant l'apport en énergie, et donc le fonctionnement.
+							</p>
+						</a>
+					</td>
+					<td>
+						<a href="pages/composants/carte_mère.html">
+							<h2>la carte mère</h2>
+							<img src="media/carte_mère.png" width="40%">
+							<p>
+								La <b>carte mère</b> est la corps de l'ordinateur, un circuit imprimé qui relie les composants qu'on y a branchés.
+							</p>
+						</a>
+					</td>
+					<td>
+						<a href="pages/composants/microprocesseur.html">
+							<h2>le microprocesseur</h2>
+							<img src="media/microprocesseur.png" width="40%">
+							<p>
+								Le <b>microprocesseur</b> est le cerveau de l'ordinateur, un petit boitier qui calcule et exécute les instructions.
+							</p>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="pages/composants/disque_dur.html">
+							<h2>le disque dur</h2>
+							<img src="media/disque_dur.png" width="40%">
+							<p>
+								Le <b>disque dur</b> est une mémoire de grande capacité où sont stockés des informations en binaire.
+							</p>
+						</a>
+					</td>
+					<td>
+						<a href="pages/composants/mémoire_vive.html">
+							<h2>la mémoire vive</h2>
+							<img src="media/RAM.png" width="40%">
+							<p>
+								La <b>mémoire vive</b> (ou RAM) est un espace de stockage temporaire rendant l'ordinateur plus réactif.
+							</p>
+						</a>
+					</td>
+					<td>
+						<a href="pages/composants/carte_graphique.html">
+							<h2>la carte graphique</h2>
+							<img src="media/carte_graphique.png" width="40%">
+							<p>
+								La <b>carte graphique</b> est l'élément responsable de l'affichage des jeux, photos, vidéos, logiciels, ...
+							</p>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="pages/composants/bus.html">
+							<h2>le bus</h2>
+							<img src="media/bus.png" width="40%">
+							<p>
+								Un <b>bus</b> est un dispositif de transmission de données d'un composant à un autre placé sur le circuit intégré.
+							</p>
+						</a>
+					</td>
+					<td>
+						<a href="pages/composants/lecteur_de_disque.html">
+							<h2>le lecteur de disques</h2>
+							<img src="media/lecteur_de_disque.png" width="40%">
+							<p>
+								Le <b>lecteur de disque</b> est un composant dédié à la lecture mais aussi à l'écriture des CD, DVD ou Blue-Ray.
+							</p>
+						</a>
+					</td>
+					<td>
+						<a href="pages/composants/connecteurs.html">
+							<h2>les connecteurs pour périphériques</h2>
+							<img src="media/connecteurs.png" width="40%">
+							<p>
+								Les <b>connecteurs pour périphériques</b> ou les cartes d'extensions sont utilisés pour relier les périphériques à l'ordinateur.
+							</p>
+						</a>
+					</td>
+				</tr>
+			</table>
+
+			<div id="mollet_de_page"> <!--en bas de la page, des fausses certifications pour le réalisme-->
+					<table width="100%" id="mentions_légales">
+						<tr>
+							<td>© 2021 compordis Tous droits résérvés</td>
+							<td>Dernière actuallisation : 18/02/2021-23:57</td>
+							<td>Laisser un avis/commentaire : cliquez <a href="pages/avis.html" target="_blank" id="avis">ici</a></td>
+							<td id="case_reseaux">
+								rejoignez nous sur nos réseaux :
+								<a href="https://fr-fr.facebook.com/compordisLesComposantsDeTonOrdi/" target="_blank" class="reseaux"><i class="fab fa-facebook-square"></i></a>
+								<a href="https://twitter.com/compordis_leSiteWeb" target="_blank" class="reseaux"><i class="fab fa-twitter-square"></i></a>
+								<a href="https://www.instagram.com/compordis-officiel/?hl=fr" target="_blank" class="reseaux"><i class="fab fa-instagram-square"></i></a>
+							</td>
+						</tr>
+					</table>
+			</div>
+		</main>
+
+		<footer> <!--pied de page sur la partie gauche : <div id="foot"> pour les informations sur la page et <div id="info"> pour plus d'infos sur moi-->
+			<div id="foot">
+				mini-projet page web HTML/CSS/JS par Flavien BOULEAU (608)
+			</div>
+			<div id="info">
+				<i class="fas fa-chevron-up"></i>
+				&nbsp;&#160;à propos du créateur :&nbsp;&#160;
+				<i class="fas fa-chevron-up"></i>
+				<span> <!--partie invisible sans le survol car sous l'écran-->
+					<br><br>
+					<table id="table_d_infos">
+						<tr>
+							<td class="infos_table"><b>prénom :</b></td>
+							<td class="moi">Flavien</td>
+							<td rowspan="5"><img src="media/ma_photo.jpg" height="110px"></td>
+						</tr>
+						<tr>
+							<td class="infos_table"><b>nom :</b></td>
+							<td class="moi">BOULEAU</td>
+						</tr>
+						<tr>
+							<td class="infos_table"><b>classe :</b></td>
+							<td class="moi">608</td>
+						</tr>
+						<tr>
+							<td class="infos_table"><b>âge :</b></td>
+							<td class="moi">16 ans</td>
+						</tr>
+						<tr>
+							<td class="infos_table"><b>spécialités :</b></td>
+							<td class="moi">NSI, maths, physique</td>
+						</tr>
+					</table>
+				</span>
+			</div>
+		</footer>
+	</div>
+	<script src="assets/base.js"></script>
+</body>
+
+
+</html>
